@@ -1,8 +1,7 @@
 module.exports = {
-	privateKeyPath: 'C:/ssh/id_rsa', // 本地私钥地址，位置一般在C:/Users/xxx/.ssh/id_rsa，非必填，有私钥则配置
+	privateKeyPath: 'C:/ssh/id_rsa', // 本地私钥地址，位置一般在C:/Users/xxx/.ssh/id_rsa，建议使用 privateKeyPath，比直接提供 password 更安全
 	passphrase: '', // 本地私钥密码，非必填，有私钥则配置
 	projectName: '', // 项目名称
-	// 根据需要进行配置，如只需部署prod线上环境，请删除dev测试环境配置，反之亦然，支持多环境部署
 	dev: {
 		// 测试环境
 		name: '测试环境',
@@ -39,5 +38,4 @@ module.exports = {
 			openInBrowser: false, // 部署完成后是否自动打开部署的网页地址
 		},
 	},
-	// 再还有多余的环境按照这个格式写即可
 };
