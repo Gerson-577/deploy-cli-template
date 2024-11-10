@@ -1,3 +1,4 @@
+// 可另增加 deploy.config.extend.js 文件，deploy.config.extend.js 会覆盖当前文件内容
 module.exports = {
 	privateKeyPath: 'C:/ssh/id_rsa', // 本地私钥地址，位置一般在C:/Users/xxx/.ssh/id_rsa，建议使用 privateKeyPath，比直接提供 password 更安全
 	passphrase: '', // 本地私钥密码，非必填，有私钥则配置
@@ -12,7 +13,7 @@ module.exports = {
 		password: '', // 登录服务器密码
 		distPath: 'dist', // 本地打包dist目录
 		webDir: '', // // 测试环境服务器地址
-
+		remoteIgnorePath: '', // 远程服务器忽略删除文件或文件夹，可填数组或字符串
 		bakOld: true, // 是否备份旧的，保留上一份旧的
 		// 部署预览
 		preview: {
@@ -30,7 +31,7 @@ module.exports = {
 		password: '', // 登录服务器密码
 		distPath: 'dist', // 本地打包dist目录
 		webDir: '', // // 线上环境服务器地址
-
+		remoteIgnorePath: '', // 远程服务器忽略删除文件或文件夹，可填数组或字符串
 		bakOld: true, // 是否备份旧的，保留上一份旧的
 		// 部署预览
 		preview: {
