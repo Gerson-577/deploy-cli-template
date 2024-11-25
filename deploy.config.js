@@ -14,8 +14,13 @@ module.exports = {
 		distPath: 'dist', // 本地打包dist目录
 		webDir: '', // // 测试环境服务器地址
 		remoteIgnorePath: '', // 远程服务器忽略删除文件或文件夹，可填数组或字符串
-		bakOld: true, // 是否备份旧的，保留上一份旧的
-		// 部署预览
+		// 备份
+		bakOld: {
+			// 备份个数，不填默认 3 个
+			num: 3,
+			// 是否备份，默认启用备份
+			enable: true,
+		}, // 部署预览
 		preview: {
 			url: '', // 部署后检查部署效果，查看的网页地址
 			openInBrowser: false, // 部署完成后是否自动打开部署的网页地址
@@ -32,8 +37,13 @@ module.exports = {
 		distPath: 'dist', // 本地打包dist目录
 		webDir: '', // // 线上环境服务器地址
 		remoteIgnorePath: '', // 远程服务器忽略删除文件或文件夹，可填数组或字符串
-		bakOld: true, // 是否备份旧的，保留上一份旧的
-		// 部署预览
+		// 备份
+		bakOld: {
+			// 备份个数，不填默认 3 个
+			num: 3,
+			// 是否备份，默认启用备份
+			enable: true,
+		}, // 部署预览
 		preview: {
 			url: '', // 部署后检查部署效果，查看的网页地址
 			openInBrowser: false, // 部署完成后是否自动打开部署的网页地址
