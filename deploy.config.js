@@ -14,6 +14,13 @@ module.exports = {
 		distPath: 'dist', // 本地打包dist目录
 		webDir: '', // // 测试环境服务器地址
 		remoteIgnorePath: '', // 远程服务器忽略删除文件或文件夹，可填数组或字符串
+		// 远程执行命令
+		remoteRun: {
+			// 部署前执行命令
+			before: '',
+			// 部署后执行命令
+			after: '',
+		},
 		// 备份
 		bakOld: {
 			// 备份个数，不填默认 3 个
@@ -37,6 +44,13 @@ module.exports = {
 		distPath: 'dist', // 本地打包dist目录
 		webDir: '', // // 线上环境服务器地址
 		remoteIgnorePath: '', // 远程服务器忽略删除文件或文件夹，可填数组或字符串
+		// 远程执行命令
+		remoteRun: {
+			// 部署前执行命令
+			before: '',
+			// 部署后执行命令
+			after: '',
+		},
 		// 备份
 		bakOld: {
 			// 备份个数，不填默认 3 个
